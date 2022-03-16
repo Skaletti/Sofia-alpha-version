@@ -37,11 +37,18 @@ ul{
     list-style: none;
 }
 .primary-nav {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 400;
     letter-spacing: .5px;
     text-transform: uppercase;
-  }
+}
+.primary-nav-footer{
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    color: white;
+}
 .nav li {
     display: inline-block;
     margin: 0 10px;
@@ -97,6 +104,18 @@ ul{
     justify-content: flex-end;/*отправляем их в низ*/
     position: relative;    
 }
+.header__content-header{
+    background-image: url(../images/история/history-logo-image.JPG);
+    min-height: calc(100vh - 100px);/*размещаем картинку на ширину всего монитора за исключением шапки*/
+    background-repeat: no-repeat;/*настройки картинки что бы она автоматически подходила под размер монитора*/
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column; /*позволяет манипулировать блоками*/
+    align-items: left;
+    justify-content: flex-end;/*отправляем их в низ*/
+    position: relative;
+}
 /* 
 .header__content::before{/*установка значка
     content: "";
@@ -132,8 +151,11 @@ ul{
     align-items: center;
     height: 300px;
 }
+.history{
+    margin: 50px 0;
+}
 .history__img{
-    height: 400px;
+    max-height: 500px;
     width: 700px;
     border-radius: 10%;
     align-items: center;
@@ -142,13 +164,27 @@ ul{
     padding-top: 150px;
     margin-bottom: 150px;
 }
+.history__concept{
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
 .concept__inner{
     max-width: 900px;
     margin-left: auto;/*ровняем по левому краю контент*/
-    background-image: url(../images/citate-border.svg);
+    /* background-image: url(../images/citate-border.svg); */
     background-repeat: no-repeat;/*настройки картинки что бы она автоматически подходила под размер монитора*/
     background-position: center;
     background-size: cover;
+    border: 6px inset #7B68EE;
+    padding: 10px;
+}
+.history__concept__inner{
+    max-width: 900px;
+    margin-left: 40px;
+    background-size: cover;
+    padding: 10px;
+    font-size: 30px;
+    text-transform: uppercase;
 }
 .section__title{
     font-family: 'Corporate-A-Bold';
@@ -158,7 +194,7 @@ ul{
     font-size: 22px;
 }
 .concept__text{
-    font-size: 24px;
+    font-size: 18px;
     margin-bottom: 25px; 
     line-height: 120%;
 }
@@ -169,13 +205,41 @@ ul{
     display: flex;
     gap: 60px;/*расстояние между элементами*/
 }
+.history__premier__inner{
+    margin-left: 30px;
+    display: flex;
+    gap: 50px;/*расстояние между элементами*/ 
+}
 .premier__text{
     margin-bottom: 24px;
     font-size: 20px;
+    max-width: 600px;
 }
 .premier__img{
     margin-bottom: 20px;
     border-radius: 10%;
+    display: flex;
+}
+.history__premier__img{
+    max-width: 900px;
+    max-height: 550px;
+    margin-bottom: 20px;
+    border-radius: 10%;
+    display: flex;
+}
+.history__img{
+    max-width: 300px;
+    max-height: 350px;
+    margin-bottom: 10px;
+    border-radius: 5%;
+    display: flex;
+}
+.design__history-img{
+    max-width: 900px;
+    max-height: 550px;
+    margin-bottom: 10px;
+    border-radius: 5%;
+    display: flex;
 }
 .premier__btn{/*настройка кнопки*/
     font-family: 'Corporate-A-Bold';
@@ -274,6 +338,23 @@ ul{
 }
 .arrow-right{
     transform: translateX(30px);
+}
+.history__box{
+    max-width: auto;
+    margin: 150px 150px;
+    padding: 0px 10px;
+    display: flex;
+    gap: 30px;
+}
+.history__box-column{
+    width: auto;
+}
+.history__block{
+    display: inline-flex;
+    gap: 25px;
+}
+.history__box-text{
+    margin-bottom: 15px; 
 }
 .design__box{
     max-width: 590px;
