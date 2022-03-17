@@ -46,6 +46,7 @@ ul{
     font-size: 20px;
     font-weight: 400;
     letter-spacing: .5px;
+    text-align: center;
     text-transform: uppercase;
     color: white;
 }
@@ -56,6 +57,10 @@ ul{
 }
 .nav li:last-child {
     margin-right: 0;
+}
+.nav li:hover{
+    font-weight: 500;
+    color: navajowhite;
 }
 .container{
      max-width: 1220px;/*из-за padding 20px съедаются, поэтому необходимо поставить 1220 максимальную ширину, что бы было 1200*/
@@ -70,6 +75,7 @@ ul{
     justify-content: space-between;/*компоненты распределяться по горизонтали по всей длине*/
     align-items: center;/*выравнивание по центру*/
     height: 100px;
+    color: white;
 }
 .header__logo{
     margin-left: 115px;
@@ -115,6 +121,7 @@ ul{
     align-items: left;
     justify-content: flex-end;/*отправляем их в низ*/
     position: relative;
+    border-bottom: dotted;
 }
 /* 
 .header__content::before{/*установка значка
@@ -143,7 +150,7 @@ ul{
     margin-bottom: 50px;
 }
 .footer{
-    background-color: #070A1B;
+    background-color: #7B68EE;
 }
 .footer__inner{
     display: flex;
@@ -194,6 +201,8 @@ ul{
     font-size: 22px;
 }
 .concept__text{
+    padding: 5px;
+    border: dotted;
     font-size: 18px;
     margin-bottom: 25px; 
     line-height: 120%;
@@ -209,6 +218,7 @@ ul{
     margin-left: 30px;
     display: flex;
     gap: 50px;/*расстояние между элементами*/ 
+    border-bottom: dotted;
 }
 .premier__text{
     margin-bottom: 24px;
@@ -226,6 +236,13 @@ ul{
     margin-bottom: 20px;
     border-radius: 10%;
     display: flex;
+}
+.history__premier__img-2{
+    max-width: 1000px;
+    max-height: 600px;
+    margin-bottom: 20px;
+    border-radius: 10%;
+    display: flex; 
 }
 .history__img{
     max-width: 300px;
@@ -298,17 +315,25 @@ ul{
     grid-template-columns: 255px 255px auto 330px;/*выставляем ширину коллонок для выравнивания по горизонтали*/
     grid-template-rows: auto auto;
     gap: 14px 44px;
-    margin-bottom: 100px;
+    padding-bottom: 20px;
+    border-bottom: dotted;
+    margin-bottom: 50px;
 }
 .design__cell-one{
     grid-row: 1/3;
 }
 .design__cell-two{
     grid-row-end: -1;/*второй блок идет в самый низ*/ /*1 2 3 = -1 -2 -3*/
-    display: flex;/*ровняем текст по нижней линии первой колонки*/
+    display: flex-box;/*ровняем текст по нижней линии первой колонки*/
     align-items: flex-end;
 }
 .design__cell-three{/*ставим последнюю картинку на место в этом блоке*/
+    grid-column-end: -1;
+    grid-row-end: -1;
+    display: flex-box;/*ровняем картинку по нижней границе первого блока*/
+    align-items: flex-end;
+}
+.design__cell-four{
     grid-column-end: -1;
     grid-row-end: -1;
     display: flex;/*ровняем картинку по нижней границе первого блока*/
@@ -345,6 +370,8 @@ ul{
     padding: 0px 10px;
     display: flex;
     gap: 30px;
+    padding-bottom: 10px;
+    border-bottom: dotted;
 }
 .history__box-column{
     width: auto;
@@ -373,4 +400,48 @@ ul{
     max-width: 100%;
     display: block;
     object-fit: cover;/*аналог background size cover*/
+}
+.footer__link{
+    color: white;
+}
+.swiper{
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide{
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.history__premier__inner-bottom{
+    margin: 100px 0 0 30px;
+    display: flex;
+    gap: 50px;/*расстояние между элементами*/     
+}
+.premier-2__img{
+    max-width: 700px;
+    max-height: 500px;
+    margin-bottom: 20px;
+    border-radius: 10%;
+    display: flex;
 }
