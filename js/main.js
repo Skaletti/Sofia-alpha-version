@@ -6,5 +6,14 @@ $(function(){
     prevArrow: '<img class="arrow arrow-left" src="images/arrow-left.svg" alt="">',
     nextArrow: '<img class="arrow arrow-right" src="images/arrow-right.svg" alt="">',
     }); 
+    
+    var swiper = new Swiper(".mySwiper", {
+        scrollbar: {
+            el: ".swiper-scrollbar",
+             hide: true,
+        },
+    });
+    
 });
+
 

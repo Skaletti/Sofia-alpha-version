@@ -108,7 +108,8 @@ ul{
     flex-direction: column; /*позволяет манипулировать блоками*/
     align-items: left;
     justify-content: flex-end;/*отправляем их в низ*/
-    position: relative;    
+    position: relative;
+    border-bottom: dotted;    
 }
 .header__content-header{
     background-image: url(../images/история/history-logo-image.JPG);
@@ -167,23 +168,31 @@ ul{
     border-radius: 10%;
     align-items: center;
 }
-.concept{
-    padding-top: 150px;
-    margin-bottom: 150px;
+.main__concept{
+    padding-top: 100px;
+    margin-bottom: 100px;
 }
 .history__concept{
     padding-top: 100px;
     margin-bottom: 100px;
 }
-.concept__inner{
+/* .concept__inner{
     max-width: 900px;
-    margin-left: auto;/*ровняем по левому краю контент*/
-    /* background-image: url(../images/citate-border.svg); */
-    background-repeat: no-repeat;/*настройки картинки что бы она автоматически подходила под размер монитора*/
+    margin-left: auto;/*ровняем по левому краю контент
+    /* background-image: url(../images/citate-border.svg); 
+    background-repeat: no-repeat;/*настройки картинки что бы она автоматически подходила под размер монитора
     background-position: center;
     background-size: cover;
     border: 6px inset #7B68EE;
     padding: 10px;
+} */
+.main__concept__inner{
+    max-width: 900px;
+    margin-left: 40px;
+    background-size: cover;
+    padding: 10px;
+    font-size: 30px;
+    text-transform: uppercase;
 }
 .history__concept__inner{
     max-width: 900px;
@@ -192,6 +201,13 @@ ul{
     padding: 10px;
     font-size: 30px;
     text-transform: uppercase;
+}
+.hello__main{
+    padding: 5px;
+    border: dotted;
+    font-size: 18px;
+    margin-bottom: 25px; 
+    line-height: 120%;
 }
 .section__title{
     font-family: 'Corporate-A-Bold';
@@ -220,12 +236,19 @@ ul{
     gap: 50px;/*расстояние между элементами*/ 
     border-bottom: dotted;
 }
+/* .premier__column-1{   
+      
+} */
+.premier__column-2{
+    padding-top: 30px;
+}
 .premier__text{
     margin-bottom: 24px;
     font-size: 20px;
     max-width: 600px;
 }
 .premier__img{
+    max-width: 570px;
     margin-bottom: 20px;
     border-radius: 10%;
     display: flex;
@@ -444,4 +467,25 @@ ul{
     margin-bottom: 20px;
     border-radius: 10%;
     display: flex;
+}
+.main__block{
+    padding: 10px auto 0 auto;
+    display: grid;
+    grid-template-columns: 700px 520px;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    padding-bottom: 20px;
+    border-bottom: dotted;
+    margin-bottom: 50px;
+}
+.main__block-text{
+    margin-bottom: 20px;
+    font-size: 20px;
+    max-width: 600px;
+}
+.main__block-img{
+    max-width: 500px;
+    max-height: 700px;
+    border-radius: 10%;
+    align-items: center;
 }
