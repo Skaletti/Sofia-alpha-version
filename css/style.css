@@ -555,6 +555,8 @@ ul{
 
     display: flex-box;
     align-items: flex-end;
+
+    padding: 10px 0 50px 0;
 }
 .legends__img{
     max-width: 700px;
@@ -565,6 +567,12 @@ ul{
     max-height: 700px;
     justify-content: right;
 }
+.legends__img-3{
+    margin-left: 50px;
+    max-width: 500px;
+    max-height: 500px;
+    justify-content: right;
+}
 .legends__box-text{
     padding: 5px;
 }
@@ -573,4 +581,12 @@ ul{
     display: flex;
     background-repeat: no-repeat;
     min-width: 100vh;
+}
+.legends__block {
+    max-width: 700px;
+    height: 400px;
+}
+.dop-info{
+    display: inline-flex;
+    margin-bottom: 50px;
 }

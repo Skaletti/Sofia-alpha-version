@@ -3,8 +3,10 @@
 // Scrollbar.init(document.querySelector('#my-scrollbar'));
 
 new Swiper(".mySwiper", {
-    scrollbar: {
-        el: ".swiper-scrollbar",
-        hide: true,
+    slidesPerView: "auto",
+    centeredSlides: true,
+    spaceBetween: 30,
+    pagination: {
+        el: ".swiper-pagination",
     },
 });
