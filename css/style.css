@@ -40,38 +40,6 @@ body{
     background-color: #7B68EE;
 }
 
-/* Стрелки */
-
-/* ::-webkit-scrollbar-button:vertical:start:decrement {
-    background: linear-gradient(120deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
-    linear-gradient(240deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
-    linear-gradient(0deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
-    background-color: #f6f8f4;
-} */
-
-/* ::-webkit-scrollbar-button:vertical:end:increment {
-    background:
-        linear-gradient(300deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
-        linear-gradient(60deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
-        linear-gradient(180deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
-    background-color: #f6f8f4;
-} */
-
-/* ::-webkit-scrollbar-button:horizontal:start:decrement {
-    background:
-        linear-gradient(30deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
-        linear-gradient(150deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
-        linear-gradient(270deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
-    background-color: #f6f8f4;
-}
-
-::-webkit-scrollbar-button:horizontal:end:increment {
-    background:
-        linear-gradient(210deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
-        linear-gradient(330deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),
-        linear-gradient(90deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
-    background-color: #f6f8f4;
-} */
 a{
     text-decoration: none;
     color: inherit; /*ссылка берет цвет у её родителя*/
@@ -125,9 +93,6 @@ ul{
     align-items: center;/*выравнивание по центру*/
     height: 100px;
     color: white;
-}
-.header__logo{
-    margin-left: 115px;
 }
 .list{
     display: flex;
@@ -199,18 +164,6 @@ ul{
     justify-content: flex-end;/*отправляем их в низ*/
     position: relative;
 }
-/* 
-.header__content::before{/*установка значка
-    content: "";
-    background-image: url(../images/decor.svg);
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    bottom: -25px;
-} 
-*/
 .title{
     font-family: 'Corporate-A-Bold';
     margin-bottom: 5px;
@@ -251,16 +204,6 @@ ul{
     padding-top: 100px;
     margin-bottom: 100px;
 }
-/* .concept__inner{
-    max-width: 900px;
-    margin-left: auto;/*ровняем по левому краю контент
-    /* background-image: url(../images/citate-border.svg); 
-    background-repeat: no-repeat;/*настройки картинки что бы она автоматически подходила под размер монитора
-    background-position: center;
-    background-size: cover;
-    border: 6px inset #7B68EE;
-    padding: 10px;
-} */
 .main__concept__inner{
     max-width: 900px;
     margin-left: 40px;
@@ -311,9 +254,6 @@ ul{
     gap: 50px;/*расстояние между элементами*/ 
     border-bottom: dotted;
 }
-/* .premier__column-1{   
-      
-} */
 .premier__column-2{
     padding-top: 30px;
 }
@@ -356,58 +296,6 @@ ul{
     border-radius: 5%;
     display: flex;
 }
-.premier__btn{/*настройка кнопки*/
-    font-family: 'Corporate-A-Bold';
-    text-transform: uppercase;
-    display: block;
-    width: 100%;
-    font-style: 18px;
-    line-height: 120%;
-    color: #0000CD;
-    text-align: center;
-    padding: 14px;/*края со всех сторон по 14 что бы не сплюснуло с текстом*/
-    border: 2px solid #0000CD;
-    transition: all .3s;
-}
-.premier__btn:hover{/*изменение цвета для кнопки*/
-    color: #FF4500;
-    border: 2px solid #FF4500;
-}
-.video{
-    margin-bottom: 150px;
-}
-.video__img{
-    margin-bottom: 25px;
-}
-.video__btn{
-    font-family: 'Corporate-A-Bold';
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;/*Для того что бы значок и надпись были на одном уровне/выравнивание по нижней линии*/
-    gap: 10px;/*добавляем расстояние между значком и надписью*/
-    width: 100%;
-    font-style: 18px;
-    line-height: 120%;
-    color: #F402A2;
-    padding: 14px;/*края со всех сторон по 14 что бы не сплюснуло с текстом*/
-    border: 1px solid #F402A2;
-    transition: all .3s;
-}
-.video__btn span{
-    padding-top: 2px;
-}
-.video__btn:hover{
-    color: #53A1CB;
-    border: 1px solid #53A1CB;
-}
-.video__btn path{/*Что бы цвет менялся у значка и у текста с одинаковой скоростью*/
-    transition: all .3s;  
-}
-.video__btn:hover path{/*смена цвета у значка кнопки через ее fill(собаственный цвет)*/
-    fill:#53A1CB;
-}
-
 .design__interior{/*делим на 4 части контент*/
     display: grid;
     grid-template-columns: 255px 255px auto 330px;/*выставляем ширину коллонок для выравнивания по горизонтали*/
@@ -440,28 +328,7 @@ ul{
 .design__cell-text{
     margin-bottom: 15px;
 }
-.design-slider__item{
-    margin: 0 30px;
-}
-.slick-track{/*Делаем так что картинки у сладера не начинаются с самого начала, а немного обрезанными остаются*/
-    margin-left: -30px;
-}
-.design-slider{
-    padding-bottom: 25px;
-}
-.arrow{
-    position: absolute;
-    z-index: 10px;/*Что бы стрелки не перекрывались*/
-    cursor: pointer;
-    bottom: 0;
-    left: 50%;     
-}
-.arrow-left{
-    transform: translateX(-80px);/*позиционирование стрелок относительно центра и друг друга*/
-}
-.arrow-right{
-    transform: translateX(30px);
-}
+
 .history__box{
     max-width: auto;
     margin: 150px 150px;
