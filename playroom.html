@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playroom</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <!--Подключение шрифтов-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <style>
+    .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <button class="header__nav">
+                    <img class="header__nav-img" src="images/pixel-logo.svg" alt="menu button">
+                </button>
+
+                <nav class="nav primary-nav">
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="history.html">История</a></li>
+                        <li><a href="developers.html">Разработчики</a></li>
+                        <li><a href="legend.html">Легенды</a></li>
+                    </ul>
+                </nav>
+                <ul class="list">
+                    <li class="list__item">
+                        <a class="list__link" href="https://twitter.com/?lang=en">
+                            <img class="list__img" src="images/twitter.svg" alt="twitter">
+                        </a>
+                    </li>
+                    <li class="list__item">
+                        <a class="list__link" href="https://www.google.com/">
+                            <img class="list__img" src="images/google.svg" alt="google">
+                        </a>
+                    </li>
+                    <li class="list__item">
+                        <a class="list__link" href="https://ru-ru.facebook.com/">
+                            <img class="list__img" src="images/facebook.svg" alt="facebook">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header__content-playroom">
+            <h1 class="title">
+                Playroom
+            </h1>
+            <p class="title-descr">
+                Time to play!
+            </p>
+        </div>
+    </header>
+
+    <section class="playroom__main">
+        <div class="container">
+            <div class="swiper myPlayroomSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <a class="footer__link" href="#">
+                    Политика конфиденциальности
+                </a>
+                <nav class="nav primary-nav-footer">
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="history.html">История</a></li>
+                        <li><a href="developers.html">Разработчики</a></li>
+                        <li><a href="legend.html">Легенды</a></li>
+                    </ul>
+                </nav>
+                <ul class="list">
+                    <li class="list__item">
+                        <a class="list__link" href="https://twitter.com/?lang=en">
+                            <img class="list__img" src="images/twitter.svg" alt="twitter">
+                        </a>
+                    </li>
+                    <li class="list__item">
+                        <a class="list__link" href="https://www.google.com/">
+                            <img class="list__img" src="images/google.svg" alt="google">
+                        </a>
+                    </li>
+                    <li class="list__item">
+                        <a class="list__link" href="https://ru-ru.facebook.com/">
+                            <img class="list__img" src="images/facebook.svg" alt="facebook">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".myPlayroomSwiper", {
+            direction: "vertical",
+            slidesPerView: 1,
+            spaceBetween: 40,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+    <!-- <script src="js/main.js"></script> -->
+</body>
+
+</html>

@@ -164,6 +164,19 @@ ul{
     justify-content: flex-end;/*отправляем их в низ*/
     position: relative;
 }
+.header__content-playroom{
+    color: white;
+    background-image: url(../images/playroom/playroom-header.jpg);
+    min-height: calc(100vh - 100px);/*размещаем картинку на ширину всего монитора за исключением шапки*/
+    background-repeat: no-repeat;/*настройки картинки что бы она автоматически подходила под размер монитора*/
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column; /*позволяет манипулировать блоками*/
+    align-items: center;
+    justify-content: flex-end;/*отправляем их в низ*/
+    position: relative;
+}
 .title{
     font-family: 'Corporate-A-Bold';
     margin-bottom: 5px;
@@ -399,6 +412,25 @@ ul{
     height: 100%;
     object-fit: cover;
 }
+.swiper-slide-playroom{
+    text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+}
 .history__premier__inner-bottom{
     margin: 100px 0 0 30px;
     display: flex;
@@ -505,4 +537,7 @@ ul{
 .dop-info{
     display: inline-flex;
     margin-bottom: 50px;
+}
+.playroom__main{
+    
 }
