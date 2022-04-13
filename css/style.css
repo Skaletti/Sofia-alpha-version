@@ -429,6 +429,9 @@ ul{
         -webkit-align-items: center;
         align-items: center;
 }
+.swiper-pagination-bullet-active {
+    background-color: #fff !important;    
+  } /*смена цвета пагинации для swiper*/
 .history__premier__inner-bottom{
     margin: 100px 0 0 30px;
     display: flex;
